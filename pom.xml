@@ -23,12 +23,12 @@
       <url>http://ec2-18-222-223-244.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/bcard-app-releases/</url>
       <layout>default</layout>
     </repository>
-    <snapshotRepository>
-      <uniqueVersion>true</uniqueVersion>
+    <Repository>
+      <uniqueVersion>false</uniqueVersion>
       <id>bcard-app-snapshots</id>
       <name>bcard-app-snapshots</name>
       <url>http://ec2-18-222-223-244.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/bcard-app-snapshots/</url>
-      <layout>legacy</layout>
+      <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
 </project>
