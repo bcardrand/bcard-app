@@ -22,7 +22,4 @@ node {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
    }
-    stage('mail') {
-      mail to: 'qamfam@gmail.com'
-   }
    }
