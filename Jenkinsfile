@@ -1,4 +1,4 @@
-node('maven-label') {
+node {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
@@ -22,4 +22,7 @@ node('maven-label') {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
    }
-}
+    stage('mail') {
+      mail to: 'qamfam@gmail.com'
+   }
+   }
